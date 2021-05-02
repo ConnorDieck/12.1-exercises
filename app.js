@@ -47,7 +47,7 @@ class Garage {
     }
 
     add(vehicle) {
-        if (this.vehicles.length === this.capacity) {
+        if (this.vehicles.length >= this.capacity) {
             return "Sorry, we're full."
         } else if (vehicle instanceof Vehicle ) {
             this.vehicles.push(vehicle);
